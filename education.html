@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Mahesh Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .education-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .education-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 8px;
+        }
+
+        .skills-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .skill-category {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .skill-category h3 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: "•";
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mahesh Kumar</div>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="education-section">
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <h3>B.E (CSE) - Sri Eshwar College of Engineering</h3>
+                <p>CGPA: 8.27 (1st year)</p>
+                <p>2023 - 2027</p>
+            </div>
+
+            <div class="education-item">
+                <h3>HSC – Vinayakar Matric Higher Secondary School</h3>
+                <p>Percentage: 93.33%</p>
+                <p>2021 - 2023</p>
+            </div>
+
+            <div class="education-item">
+                <h3>SSLC – Good Shepherd High School</h3>
+                <p>2020 - 2021</p>
+            </div>
+
+            <h2>Skills & Certifications</h2>
+            <div class="skills-section">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Shell Scripting</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Core Skills</h3>
+                    <ul class="skill-list">
+                        <li>Data Structures</li>
+                        <li>OOPS</li>
+                        <li>Linux Operating System (Ubuntu OS)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <ul class="skill-list">
+                        <li>AWS Cloud Foundation</li>
+                        <li>Azure Fundamentals</li>
+                        <li>DevOps Tools</li>
+                        <li>Jenkins</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Networking</h3>
+                    <ul class="skill-list">
+                        <li>Subnetting</li>
+                        <li>Routing and Switching Configurations</li>
+                        <li>Protocols</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul class="skill-list">
+                        <li>Canva</li>
+                        <li>Git & GitHub</li>
+                        <li>Figma</li>
+                        <li>Ubuntu</li>
+                        <li>Cisco Packet Tracer</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Certifications</h3>
+                    <ul class="skill-list">
+                        <li>Mastering Data Structure and Algorithms Using C and C++ (Udemy)</li>
+                        <li>AWS Cloud Practitioner Certification (AWS)</li>
+                        <li>Cloud Foundation | Cloud Architecture | Cloud Service Providers (Great Learning)</li>
+                        <li>Introduction to Cloud Computing (IBM - Coursera)</li>
+                        <li>The Complete Networking Fundamentals Course (Udemy)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mahesh Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

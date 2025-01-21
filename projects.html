@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mahesh Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .projects-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .project-link:hover {
+            background: #45a049;
+        }
+
+        .achievements {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+
+        .achievement-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .achievement-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .achievement-list li::before {
+            content: "🏆";
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mahesh Kumar</div>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="projects-container">
+            <div class="project-card" onclick="window.open('https://smahesh-kumarr.github.io/calculator-app/', '_blank')">
+                <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=1000&auto=format&fit=crop" alt="Calculator" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Calculator App</h3>
+                    <p class="project-description">A fully functional calculator web application built with modern web technologies.</p>
+                    <a href="https://smahesh-kumarr.github.io/calculator-app/" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://smahesh-kumarr.github.io/Treasure-app/', '_blank')">
+                <img src="https://images.unsplash.com/photo-1586769852044-692d6e3703f0?q=80&w=1000&auto=format&fit=crop" alt="Treasure Hunt" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Treasure Hunt App</h3>
+                    <p class="project-description">An interactive treasure hunting game application with engaging gameplay.</p>
+                    <a href="https://smahesh-kumarr.github.io/Treasure-app/" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://smahesh-kumarr.github.io/Hp_ad/', '_blank')">
+                <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?q=80&w=1000&auto=format&fit=crop" alt="HP Advertisement" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">HP Advertisement</h3>
+                    <p class="project-description">A creative advertisement project showcasing HP products and services.</p>
+                    <a href="https://smahesh-kumarr.github.io/Hp_ad/" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="achievements">
+            <h2>Programming Achievements</h2>
+            <ul class="achievement-list">
+                <li>Leetcode: Rating - 1418 | Solved 68+ problems</li>
+                <li>Codechef: Rating - 1078 | Solved 340+ problems</li>
+                <li>Selfie Hackathon: Finalist among 65+ Teams</li>
+                <li>Portfolio Fest: Secured 3rd prize in an Inter Campus Competition</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mahesh Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
